@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Online Library</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="./Assets/logo.png" alt="Logo" height="50px" width="50px" />
+      </a>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="./Pages/about.html">About</a>
+        </li>
+        <li>
+          <a href="./Pages/login.html">Login</a>
+        </li>
+        <li>
+          <a href="./Pages/signup.html">Sign-up</a>
+        </li>
+      </ul>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    <!-- Hero Img -->
+    <div class="hero">
+      <div class="heading">
+        <h1>Digital audio books, videos and eBooks</h1>
+      </div>
+      <!-- Search Stuff -->
+      <div class="search">
+        <input
+          class="search-bar"
+          type="text"
+          placeholder="Enter OpenLibrary ID"
+        />
+        <div class="search-icon">
+          <button class="searchBtn">
+            <img src="./Assets/spyglass.svg" alt="search-icon" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Found Book -->
+    <div class="searchedBook">
+      <h1>Result</h1>
+    </div>
+    <!-- Main Content -->
+    <div class="trendingBooks">
+      <h1>Top Trending Books</h1>
+      <div class="books"></div>
+    </div>
+    <!-- Reasons to use digital books -->
+    <div class="reasons-container">
+      <h1>12 Great Reasons To Use Digital Books</h1>
+      <div class="reasons-list">
+        <ol>
+          <li>
+            Convenience
+            <p>
+              Listen anytime, anywhere, online or offline. Stream audio directly
+              in your browser or download and play while disconnected.
+            </p>
+          </li>
+          <li>
+            Mobile
+            <p>
+              Listen on your mobile, tablet, or desktop. Audio file formats are
+              supported and played on all devices.
+            </p>
+          </li>
+          <li>
+            Education
+            <p>
+              Learn by listening and become a proficient reader. Access native
+              speakers to help you learn a language.
+            </p>
+          </li>
+          <li>
+            Learning English
+            <p>
+              Improve your pronunciation, expand your vocabulary and better your
+              listening skills in your target language
+            </p>
+          </li>
+          <li>
+            Adaptable
+            <p>
+              Find a narrator you like, change the playback speed, and adjust
+              the volume to create the perfect listening experience.
+            </p>
+          </li>
+          <li>
+            Sharing
+            <p>
+              Things are always better together. Share your favourite digital
+              books and listen with friends and family.
+            </p>
+          </li>
+          <li>
+            Portable
+            <p>
+              Carry your whole library with you wherever you go and access it on
+              your mobile, tablet, or e-reading device. Ideal for travelling.
+            </p>
+          </li>
+          <li>
+            Variety
+            <p>
+              Access thousands of books or podcasts online from a range of
+              online libraries covering all genres.
+            </p>
+          </li>
+          <li>
+            E-readers
+            <p>
+              Feature-packed e-readers include wifi, backlighting, and
+              dictionaries for multi-language support. Change the font size, add
+              audio, and even make digital notes.
+            </p>
+          </li>
+          <li>
+            Studying
+            <p>
+              Widen your vocabulary and improve your grammar. Use graded ebooks
+              or read and listen to the audio book at the same time to test your
+              comprehension.
+            </p>
+          </li>
+          <li>
+            Environment
+            <p>
+              Digital books are green. No paper, no transportation costs, no
+              waste.
+            </p>
+          </li>
+          <li>
+            Classics are free!
+            <p>
+              Thousands of classic books are available free in the public
+              domain. Digitalbook provides a platform to easily access these
+              books along with free podcasts.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- Definitions -->
+    <div class="definitions-container">
+      <h1>Definitions</h1>
+      <div class="definition-card-container">
+        <div class="definition-card">
+          <div class="definition-title">Audio Books</div>
+          <p class="definition-desc">
+            An audio book is a recording of a text read aloud, either word for
+            word or abridged. They are a convenient alternative to traditional
+            books and an important media for the visually impaired. Audio books
+            have come a long way since the 1930s when the first full length
+            recordings appeared for people with disabilities. They were made
+            available to the general public in the 1950s, but it wasn’t until
+            the 1970s with the release of cassette tapes that popularity began
+            to rise, especially among commuters while driving. Today, we no
+            longer use bulky recording formats to listen to audio books. New
+            digital devices with space for thousands of files allow you to carry
+            a library around, and download or stream audio directly online.
+            Popular audio formats like mp3 files play on the majority of digital
+            devices. Platforms such as Google Books and Amazon, provide access
+            to huge libraries of books, while smaller non-profit organizations,
+            such as Librivox, allow public domain access to free audio books
+            read by volunteers.
+          </p>
+        </div>
+
+        <div class="definition-card">
+          <div class="definition-title">eBooks</div>
+          <p class="definition-desc">
+            An eBook (or Electronic Book) is a version of a printed book in
+            digital format. They are cheaper and quicker to publish and
+            therefore provide a more convenient way to circulate literature.
+            During the 1970s the Internet provided a huge step forward for
+            sharing digital texts and making them available on screen and ready
+            to download. By the end of the 1990s, publishers started to provide
+            digital versions alongside their printed counterparts. EBooks are
+            typically read using an e-reader, such as the popular Kindle,
+            although most digital devices can read EPUBs, the most common format
+            used today. Some devices even allow you to listen to the spoken word
+            and read at the same time. There are plenty of free eBooks available
+            in the public domain, from sites such as Gutenberg and although not
+            likely to replace printed books in the near future, eBooks and audio
+            books are changing the way we consume literature. Digitalbook.io
+            aims to facilitate this by bringing together the best digital books
+            from all the top online sources.
+          </p>
+        </div>
+
+        <div class="definition-card">
+          <div class="definition-title">Videos</div>
+          <p class="definition-desc">
+            Video is an electronic medium for the recording, copying, playback,
+            broadcasting, and display of moving visual media.[1] Video was first
+            developed for mechanical television systems, which were quickly
+            replaced by cathode ray tube (CRT) systems which were later replaced
+            by flat panel displays of several types.Video systems vary in
+            display resolution, aspect ratio, refresh rate, color capabilities
+            and other qualities. Analog and digital variants exist and can be
+            carried on a variety of media, including radio broadcast, magnetic
+            tape, optical discs, computer files, and network streaming.Video
+            technology was first developed for mechanical television systems,
+            which were quickly replaced by cathode ray tube (CRT) television
+            systems, but several new technologies for video display devices have
+            since been invented. Video was originally exclusively a live
+            technology. Charles Ginsburg led an Ampex research team developing
+            one of the first practical video tape recorders (VTR). In 1951 the
+            first VTR captured live images from television cameras by writing
+            the camera's electrical signal onto magnetic videotape.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

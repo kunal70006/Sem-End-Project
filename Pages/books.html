@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Books</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <header>
+      <a href="#" class="logo">
+        <img src="../Assets/logo.png" alt="Logo" height="50px" width="50px" />
+      </a>
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./login.html">Login</a>
+        </li>
+        <li>
+          <a href="./signup.html">Sign-up</a>
+        </li>
+      </ul>
+    </header>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+    <div class="booksDivContainer">
+      <h1 class="header">Books</h1>
+      <div class="bookSearch">
+        <input class="search-bar" type="text" placeholder="Title..." />
+        <div class="search-icon">
+          <button class="searchBtn">
+            <img src="../Assets/spyglass.svg" alt="search-icon" />
+          </button>
+        </div>
+      </div>
+      <div class="booksDiv"></div>
+    </div>
+
+    <script src="../books.js"></script>
+  </body>
+</html>
